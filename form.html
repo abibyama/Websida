@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+    <h1>Register here!</h1>
+
+
+    <form id="registration-form" action="" method="GET">
+        <label for="firstname">First name</label>
+        <input type="text" id="firstname" name="firstname" required>
+        
+        <label for="lastname">Last name</label>
+        <input type="text" id="lastname" name="lastname" required>
+        <label for="email">Email</label>
+        <input type="email" required>
+        <label for="password">Password</label>
+        <input type="password" id="password" maxlength="8" minlength="6" required>
+        <label for="gender">Gender</label> <br>
+        
+    <div class="form-row">
+        <input type="radio" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" value="other">
+        <label for="other">Other</label>
+    </div>
+
+    <label for="country">Country</label>
+    <select id="country" name="cars">
+  <option value="SE">Sweden</option>
+  <option value="NO">Norway</option>
+  <option value="FI">Finland</option>
+  <option value="DK">Denmark</option>
+    </select>
+    
+    <label for="comment">Comment</label>
+    <textarea name="comment" id="comment" rows="10" placeholder="Meddelande"></textarea>
+
+    <input type="checkbox" required>
+    <label for="terms">Do you accept the terms for registeration?</label>
+    <input type="submit" value="Send">
+
+
+
+    </form>
+
+</body>
+</html>
